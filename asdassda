@@ -1,0 +1,946 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ATATHubBETA = Instance.new("ScreenGui")
+local Drag = Instance.new("ImageLabel")
+local Main = Instance.new("Frame")
+local Tabs = Instance.new("Frame")
+local Menu = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Reanim = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Hat = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local Credits = Instance.new("TextButton")
+local Frame_4 = Instance.new("Frame")
+local Rainbow = Instance.new("Frame")
+local Hubs = Instance.new("Frame")
+local Hat_2 = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local n5 = Instance.new("TextButton")
+local NeptunianRBB = Instance.new("TextButton")
+local Shotgun = Instance.new("TextButton")
+local HatOrbit = Instance.new("TextButton")
+local TrapRifle = Instance.new("TextButton")
+local Naruto = Instance.new("TextButton")
+local Sex = Instance.new("TextButton")
+local BanH = Instance.new("TextButton")
+local Cop = Instance.new("TextButton")
+local Pillow = Instance.new("TextButton")
+local pen = Instance.new("TextButton")
+local car = Instance.new("TextButton")
+local Gun = Instance.new("TextButton")
+local Reanim_2 = Instance.new("Frame")
+local Reanim_3 = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+local Ragdoll = Instance.new("TextButton")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local UIPadding_2 = Instance.new("UIPadding")
+local Menu_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Logs = Instance.new("TextBox")
+local Info = Instance.new("TextLabel")
+local Thanks = Instance.new("TextLabel")
+local Wellcome = Instance.new("TextLabel")
+local Credits_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Credits_3 = Instance.new("TextBox")
+local Wellcome_2 = Instance.new("TextLabel")
+local Credits_4 = Instance.new("TextBox")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ATATHubBETA.Name = "ATATHubBETA"
+ATATHubBETA.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ATATHubBETA.ResetOnSpawn = false
+
+Drag.Name = "Drag"
+Drag.Parent = ATATHubBETA
+Drag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Drag.BackgroundTransparency = 1.000
+Drag.Position = UDim2.new(0.231879056, 0, 0.246972829, 0)
+Drag.Size = UDim2.new(0, 675, 0, 411)
+Drag.Image = "rbxassetid://3570695787"
+Drag.ImageColor3 = Color3.fromRGB(170, 0, 0)
+Drag.ScaleType = Enum.ScaleType.Slice
+Drag.SliceCenter = Rect.new(100, 100, 100, 100)
+Drag.SliceScale = 0.120
+
+Main.Name = "Main"
+Main.Parent = Drag
+Main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 0.0676064566, 0)
+Main.Size = UDim2.new(0, 675, 0, 383)
+Main.ZIndex = 2
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Tabs.BorderSizePixel = 0
+Tabs.Size = UDim2.new(0, 675, 0, 38)
+Tabs.ZIndex = 3
+
+Menu.Name = "Menu"
+Menu.Parent = Tabs
+Menu.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Menu.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0, 0, 0.0526315793, 0)
+Menu.Size = UDim2.new(0, 113, 0, 36)
+Menu.ZIndex = 3
+Menu.Font = Enum.Font.SourceSansSemibold
+Menu.Text = "Menu"
+Menu.TextColor3 = Color3.fromRGB(255, 255, 255)
+Menu.TextSize = 17.000
+
+Frame.Parent = Menu
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame.Size = UDim2.new(0, 113, 0, 1)
+Frame.ZIndex = 3
+
+Reanim.Name = "Reanim"
+Reanim.Parent = Tabs
+Reanim.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Reanim.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Reanim.BorderSizePixel = 0
+Reanim.Position = UDim2.new(0.16580689, 0, 0.0526315793, 0)
+Reanim.Size = UDim2.new(0, 113, 0, 36)
+Reanim.ZIndex = 3
+Reanim.Font = Enum.Font.SourceSansSemibold
+Reanim.Text = "Reanimate"
+Reanim.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reanim.TextSize = 17.000
+
+Frame_2.Parent = Reanim
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame_2.Size = UDim2.new(0, 113, 0, 1)
+Frame_2.Visible = false
+Frame_2.ZIndex = 3
+
+Hat.Name = "Hat"
+Hat.Parent = Tabs
+Hat.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Hat.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hat.BorderSizePixel = 0
+Hat.Position = UDim2.new(0.333114684, 0, 0.0526315793, 0)
+Hat.Size = UDim2.new(0, 113, 0, 36)
+Hat.ZIndex = 3
+Hat.Font = Enum.Font.SourceSansSemibold
+Hat.Text = "Hat Scripts"
+Hat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hat.TextSize = 17.000
+
+Frame_3.Parent = Hat
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame_3.Size = UDim2.new(0, 113, 0, 1)
+Frame_3.Visible = false
+Frame_3.ZIndex = 3
+
+Credits.Name = "Credits"
+Credits.Parent = Tabs
+Credits.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Credits.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.499489009, 0, 0.0526315793, 0)
+Credits.Size = UDim2.new(0, 113, 0, 36)
+Credits.ZIndex = 3
+Credits.Font = Enum.Font.SourceSansSemibold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 17.000
+
+Frame_4.Parent = Credits
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame_4.Size = UDim2.new(0, 113, 0, 1)
+Frame_4.Visible = false
+Frame_4.ZIndex = 3
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Main
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderSizePixel = 0
+Rainbow.Size = UDim2.new(0, 675, 0, 2)
+Rainbow.ZIndex = 5
+
+Hubs.Name = "Hubs"
+Hubs.Parent = Main
+Hubs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hubs.BackgroundTransparency = 1.000
+Hubs.Position = UDim2.new(0, 0, 0.0992167071, 0)
+Hubs.Size = UDim2.new(0, 674, 0, 345)
+Hubs.ZIndex = 3
+
+Hat_2.Name = "Hat"
+Hat_2.Parent = Hubs
+Hat_2.BackgroundColor3 = Color3.fromRGB(130, 0, 0)
+Hat_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Hat_2.BorderSizePixel = 0
+Hat_2.Size = UDim2.new(0, 675, 0, 345)
+Hat_2.Visible = false
+Hat_2.ZIndex = 4
+
+UIGridLayout.Parent = Hat_2
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 162, 0, 50)
+
+UIPadding.Parent = Hat_2
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+n5.Name = "n5"
+n5.Parent = Hat_2
+n5.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+n5.BorderSizePixel = 0
+n5.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+n5.Size = UDim2.new(0, 395, 0, 145)
+n5.ZIndex = 4
+n5.Font = Enum.Font.GothamSemibold
+n5.Text = "Neptunian V"
+n5.TextColor3 = Color3.fromRGB(255, 255, 255)
+n5.TextSize = 14.000
+
+NeptunianRBB.Name = "NeptunianRBB"
+NeptunianRBB.Parent = Hat_2
+NeptunianRBB.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+NeptunianRBB.BorderSizePixel = 0
+NeptunianRBB.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+NeptunianRBB.Size = UDim2.new(0, 395, 0, 145)
+NeptunianRBB.ZIndex = 4
+NeptunianRBB.Font = Enum.Font.GothamSemibold
+NeptunianRBB.Text = "Neptunian RBB"
+NeptunianRBB.TextColor3 = Color3.fromRGB(255, 255, 255)
+NeptunianRBB.TextSize = 14.000
+
+Shotgun.Name = "Shotgun"
+Shotgun.Parent = Hat_2
+Shotgun.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Shotgun.BorderSizePixel = 0
+Shotgun.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Shotgun.Size = UDim2.new(0, 395, 0, 145)
+Shotgun.ZIndex = 4
+Shotgun.Font = Enum.Font.GothamSemibold
+Shotgun.Text = "Shotgun"
+Shotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shotgun.TextSize = 14.000
+
+HatOrbit.Name = "HatOrbit"
+HatOrbit.Parent = Hat_2
+HatOrbit.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+HatOrbit.BorderSizePixel = 0
+HatOrbit.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+HatOrbit.Size = UDim2.new(0, 395, 0, 145)
+HatOrbit.ZIndex = 4
+HatOrbit.Font = Enum.Font.GothamSemibold
+HatOrbit.Text = "Hat Orbit"
+HatOrbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+HatOrbit.TextSize = 14.000
+
+TrapRifle.Name = "TrapRifle"
+TrapRifle.Parent = Hat_2
+TrapRifle.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+TrapRifle.BorderSizePixel = 0
+TrapRifle.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+TrapRifle.Size = UDim2.new(0, 395, 0, 145)
+TrapRifle.ZIndex = 4
+TrapRifle.Font = Enum.Font.GothamSemibold
+TrapRifle.Text = "Trap Rifle"
+TrapRifle.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrapRifle.TextSize = 14.000
+
+Naruto.Name = "Naruto"
+Naruto.Parent = Hat_2
+Naruto.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Naruto.BorderSizePixel = 0
+Naruto.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Naruto.Size = UDim2.new(0, 395, 0, 145)
+Naruto.ZIndex = 4
+Naruto.Font = Enum.Font.GothamSemibold
+Naruto.Text = "Naruto"
+Naruto.TextColor3 = Color3.fromRGB(255, 255, 255)
+Naruto.TextSize = 14.000
+
+Sex.Name = "Sex"
+Sex.Parent = Hat_2
+Sex.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Sex.BorderSizePixel = 0
+Sex.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Sex.Size = UDim2.new(0, 395, 0, 145)
+Sex.ZIndex = 4
+Sex.Font = Enum.Font.GothamSemibold
+Sex.Text = "Sex Stand"
+Sex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sex.TextSize = 14.000
+
+BanH.Name = "BanH"
+BanH.Parent = Hat_2
+BanH.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+BanH.BorderSizePixel = 0
+BanH.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+BanH.Size = UDim2.new(0, 395, 0, 145)
+BanH.ZIndex = 4
+BanH.Font = Enum.Font.GothamSemibold
+BanH.Text = "Ban Hammer"
+BanH.TextColor3 = Color3.fromRGB(255, 255, 255)
+BanH.TextSize = 14.000
+
+Cop.Name = "Cop"
+Cop.Parent = Hat_2
+Cop.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Cop.BorderSizePixel = 0
+Cop.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Cop.Size = UDim2.new(0, 395, 0, 145)
+Cop.ZIndex = 4
+Cop.Font = Enum.Font.GothamSemibold
+Cop.Text = "Cop"
+Cop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cop.TextSize = 14.000
+
+Pillow.Name = "Pillow"
+Pillow.Parent = Hat_2
+Pillow.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Pillow.BorderSizePixel = 0
+Pillow.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Pillow.Size = UDim2.new(0, 395, 0, 145)
+Pillow.ZIndex = 4
+Pillow.Font = Enum.Font.GothamSemibold
+Pillow.Text = "Pillow"
+Pillow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pillow.TextSize = 14.000
+
+pen.Name = "pen"
+pen.Parent = Hat_2
+pen.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+pen.BorderSizePixel = 0
+pen.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+pen.Size = UDim2.new(0, 395, 0, 145)
+pen.ZIndex = 4
+pen.Font = Enum.Font.GothamSemibold
+pen.Text = "Pen"
+pen.TextColor3 = Color3.fromRGB(255, 255, 255)
+pen.TextSize = 14.000
+
+car.Name = "car"
+car.Parent = Hat_2
+car.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+car.BorderSizePixel = 0
+car.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+car.Size = UDim2.new(0, 395, 0, 145)
+car.ZIndex = 4
+car.Font = Enum.Font.GothamSemibold
+car.Text = "Car"
+car.TextColor3 = Color3.fromRGB(255, 255, 255)
+car.TextSize = 14.000
+
+Gun.Name = "Gun"
+Gun.Parent = Hat_2
+Gun.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Gun.BorderSizePixel = 0
+Gun.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Gun.Size = UDim2.new(0, 395, 0, 145)
+Gun.ZIndex = 4
+Gun.Font = Enum.Font.GothamSemibold
+Gun.Text = "Gun"
+Gun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gun.TextSize = 14.000
+
+Reanim_2.Name = "Reanim"
+Reanim_2.Parent = Hubs
+Reanim_2.BackgroundColor3 = Color3.fromRGB(130, 0, 0)
+Reanim_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Reanim_2.BorderSizePixel = 0
+Reanim_2.Size = UDim2.new(0, 675, 0, 345)
+Reanim_2.Visible = false
+Reanim_2.ZIndex = 4
+
+Reanim_3.Name = "Reanim"
+Reanim_3.Parent = Reanim_2
+Reanim_3.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Reanim_3.BorderSizePixel = 0
+Reanim_3.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Reanim_3.Size = UDim2.new(0, 395, 0, 145)
+Reanim_3.ZIndex = 4
+Reanim_3.Font = Enum.Font.GothamSemibold
+Reanim_3.Text = "R6 Reanimate"
+Reanim_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reanim_3.TextSize = 14.000
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Reanim_2
+Noclip.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Noclip.Size = UDim2.new(0, 395, 0, 145)
+Noclip.ZIndex = 4
+Noclip.Font = Enum.Font.GothamSemibold
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 14.000
+
+Respawn.Name = "Respawn"
+Respawn.Parent = Reanim_2
+Respawn.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Respawn.BorderSizePixel = 0
+Respawn.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Respawn.Size = UDim2.new(0, 395, 0, 145)
+Respawn.ZIndex = 4
+Respawn.Font = Enum.Font.GothamSemibold
+Respawn.Text = "Respawn"
+Respawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Respawn.TextSize = 14.000
+
+Ragdoll.Name = "Ragdoll"
+Ragdoll.Parent = Reanim_2
+Ragdoll.BackgroundColor3 = Color3.fromRGB(93, 0, 0)
+Ragdoll.BorderSizePixel = 0
+Ragdoll.Position = UDim2.new(0.0237037018, 0, 0.0289855078, 0)
+Ragdoll.Size = UDim2.new(0, 395, 0, 145)
+Ragdoll.ZIndex = 4
+Ragdoll.Font = Enum.Font.GothamSemibold
+Ragdoll.Text = "Ragdoll Bypass"
+Ragdoll.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ragdoll.TextSize = 14.000
+
+UIGridLayout_2.Parent = Reanim_2
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellSize = UDim2.new(0, 162, 0, 50)
+
+UIPadding_2.Parent = Reanim_2
+UIPadding_2.PaddingBottom = UDim.new(0, 5)
+UIPadding_2.PaddingLeft = UDim.new(0, 5)
+UIPadding_2.PaddingRight = UDim.new(0, 5)
+UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+Menu_2.Name = "Menu"
+Menu_2.Parent = Hubs
+Menu_2.BackgroundColor3 = Color3.fromRGB(130, 0, 0)
+Menu_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Menu_2.BorderSizePixel = 0
+Menu_2.Size = UDim2.new(0, 675, 0, 345)
+Menu_2.ZIndex = 4
+
+TextLabel.Name = "-"
+TextLabel.Parent = Menu_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel.Position = UDim2.new(0.00148148148, 0, 0.257971019, 0)
+TextLabel.Size = UDim2.new(0, 674, 0, 22)
+TextLabel.ZIndex = 4
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "----------------------------------------------------------------------"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+Logs.Name = "Logs"
+Logs.Parent = Menu_2
+Logs.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Logs.BorderSizePixel = 0
+Logs.Position = UDim2.new(0.0148148146, 0, 0.321739137, 0)
+Logs.Selectable = false
+Logs.Size = UDim2.new(0, 655, 0, 223)
+Logs.ZIndex = 4
+Logs.ClearTextOnFocus = false
+Logs.Font = Enum.Font.Code
+Logs.MultiLine = true
+Logs.ShowNativeInput = false
+Logs.Text = "-This script is in the BETA version, you can buy full version from our discord : https://discord.gg/hGgZsDBens\\n \\n-BETA version will not be updated."
+Logs.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logs.TextSize = 20.000
+Logs.TextWrapped = true
+Logs.TextXAlignment = Enum.TextXAlignment.Left
+Logs.TextYAlignment = Enum.TextYAlignment.Top
+
+Info.Name = "Info"
+Info.Parent = Menu_2
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Info.Position = UDim2.new(0, 0, 0.200000003, 0)
+Info.Size = UDim2.new(0, 674, 0, 26)
+Info.ZIndex = 4
+Info.Font = Enum.Font.GothamBlack
+Info.Text = "Information"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 25.000
+
+Thanks.Name = "Thanks"
+Thanks.Parent = Menu_2
+Thanks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thanks.BackgroundTransparency = 1.000
+Thanks.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Thanks.Position = UDim2.new(0.00148148148, 0, 0.0753623173, 0)
+Thanks.Size = UDim2.new(0, 674, 0, 26)
+Thanks.ZIndex = 4
+Thanks.Font = Enum.Font.GothamSemibold
+Thanks.Text = "Thanks for using us."
+Thanks.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thanks.TextSize = 20.000
+
+Wellcome.Name = "Wellcome"
+Wellcome.Parent = Menu_2
+Wellcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.BackgroundTransparency = 1.000
+Wellcome.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Wellcome.Size = UDim2.new(0, 674, 0, 26)
+Wellcome.ZIndex = 4
+Wellcome.Font = Enum.Font.GothamBlack
+Wellcome.Text = "Wellcome to ATAT Hub [BETA] !"
+Wellcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.TextSize = 20.000
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = Hubs
+Credits_2.BackgroundColor3 = Color3.fromRGB(130, 0, 0)
+Credits_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Credits_2.BorderSizePixel = 0
+Credits_2.Position = UDim2.new(0, 0, -0.00289855083, 0)
+Credits_2.Size = UDim2.new(0, 675, 0, 345)
+Credits_2.Visible = false
+Credits_2.ZIndex = 4
+
+TextLabel_2.Name = "-"
+TextLabel_2.Parent = Credits_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_2.Position = UDim2.new(0.00148148148, 0, 0.0869565234, 0)
+TextLabel_2.Size = UDim2.new(0, 674, 0, 33)
+TextLabel_2.ZIndex = 4
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "----------------------------------------------------------------------"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+
+Credits_3.Name = "Credits"
+Credits_3.Parent = Credits_2
+Credits_3.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Credits_3.BackgroundTransparency = 1.000
+Credits_3.BorderSizePixel = 0
+Credits_3.Position = UDim2.new(0.0148148146, 0, 0.182608694, 0)
+Credits_3.Selectable = false
+Credits_3.Size = UDim2.new(0, 655, 0, 271)
+Credits_3.ZIndex = 5
+Credits_3.ClearTextOnFocus = false
+Credits_3.Font = Enum.Font.Code
+Credits_3.MultiLine = true
+Credits_3.ShowNativeInput = false
+Credits_3.Text = "Scripts by : HANDSOMEs#1337 and SametS'#2241\\nGui Design : Nemsploits#7409\\nObfuscator : Zer0#3096\\nOwner : HANDSOMEs#1337"
+Credits_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_3.TextSize = 20.000
+Credits_3.TextWrapped = true
+Credits_3.TextXAlignment = Enum.TextXAlignment.Left
+Credits_3.TextYAlignment = Enum.TextYAlignment.Top
+
+Wellcome_2.Name = "Wellcome"
+Wellcome_2.Parent = Credits_2
+Wellcome_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome_2.BackgroundTransparency = 1.000
+Wellcome_2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Wellcome_2.Size = UDim2.new(0, 674, 0, 49)
+Wellcome_2.ZIndex = 4
+Wellcome_2.Font = Enum.Font.GothamBlack
+Wellcome_2.Text = "Credits"
+Wellcome_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome_2.TextSize = 35.000
+Wellcome_2.TextWrapped = true
+
+Credits_4.Name = "Credits"
+Credits_4.Parent = Credits_2
+Credits_4.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Credits_4.BackgroundTransparency = 1.000
+Credits_4.BorderSizePixel = 0
+Credits_4.Position = UDim2.new(0.346448034, 0, 0.524637699, 0)
+Credits_4.Selectable = false
+Credits_4.Size = UDim2.new(0, 429, 0, 153)
+Credits_4.ZIndex = 4
+Credits_4.ClearTextOnFocus = false
+Credits_4.Font = Enum.Font.Code
+Credits_4.MultiLine = true
+Credits_4.ShowNativeInput = false
+Credits_4.Text = "And specially you :)"
+Credits_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_4.TextSize = 20.000
+Credits_4.TextWrapped = true
+Credits_4.TextXAlignment = Enum.TextXAlignment.Left
+Credits_4.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_3.Parent = Drag
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 675, 0, 27)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "ATAT Hub [BETA]"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+-- Scripts:
+
+local function VYUDYB_fake_script() -- ATATHubBETA.Message 
+	local script = Instance.new('LocalScript', ATATHubBETA)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "ATAT Hub Loaded!";
+			Text = "Thank you for using ATAT Hub!";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+end
+coroutine.wrap(VYUDYB_fake_script)()
+local function IHYD_fake_script() -- Menu.Script 
+	local script = Instance.new('Script', Menu)
+
+	local menustick = script.Parent.Frame
+	local reanimstick = script.Parent.Parent.Reanim.Frame
+	local hatstick = script.Parent.Parent.Hat.Frame
+	local creditstick = script.Parent.Parent.Credits.Frame
+	local Hubs = script.Parent.Parent.Parent.Hubs
+	local Credits = Hubs.Credits
+	local Menu = Hubs.Menu
+	local Reanim = Hubs.Reanim
+	local Hat = Hubs.Hat
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		menustick.Visible = true
+		reanimstick.Visible = false
+		hatstick.Visible = false
+		creditstick.Visible = false
+		Menu.Visible = true
+		Credits.Visible = false
+		Reanim.Visible = false
+		Hat.Visible = false
+	end)
+end
+coroutine.wrap(IHYD_fake_script)()
+local function TYFPAP_fake_script() -- Reanim.Script 
+	local script = Instance.new('Script', Reanim)
+
+	local reanimstick = script.Parent.Frame
+	local menustick = script.Parent.Parent.Menu.Frame
+	local hatstick = script.Parent.Parent.Hat.Frame
+	local creditstick = script.Parent.Parent.Credits.Frame
+	local Hubs = script.Parent.Parent.Parent.Hubs
+	local Credits = Hubs.Credits
+	local Menu = Hubs.Menu
+	local Reanim = Hubs.Reanim
+	local Hat = Hubs.Hat
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		menustick.Visible = false
+		reanimstick.Visible = true
+		hatstick.Visible = false
+		creditstick.Visible = false
+		Menu.Visible = false
+		Credits.Visible = false
+		Reanim.Visible = true
+		Hat.Visible = false
+	end)
+end
+coroutine.wrap(TYFPAP_fake_script)()
+local function LIOQ_fake_script() -- Hat.Script 
+	local script = Instance.new('Script', Hat)
+
+	local hatstick = script.Parent.Frame
+	local reanimstick = script.Parent.Parent.Reanim.Frame
+	local menustick = script.Parent.Parent.Menu.Frame
+	local creditstick = script.Parent.Parent.Credits.Frame
+	local Hubs = script.Parent.Parent.Parent.Hubs
+	local Credits = Hubs.Credits
+	local Menu = Hubs.Menu
+	local Reanim = Hubs.Reanim
+	local Hat = Hubs.Hat
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		menustick.Visible = false
+		reanimstick.Visible = false
+		hatstick.Visible = true
+		creditstick.Visible = false
+		Menu.Visible = false
+		Credits.Visible = false
+		Reanim.Visible = false
+		Hat.Visible = true
+	end)
+end
+coroutine.wrap(LIOQ_fake_script)()
+local function HWABXE_fake_script() -- Credits.Script 
+	local script = Instance.new('Script', Credits)
+
+	local creditstick = script.Parent.Frame
+	local reanimstick = script.Parent.Parent.Reanim.Frame
+	local hatstick = script.Parent.Parent.Hat.Frame
+	local menustick = script.Parent.Parent.Menu.Frame
+	local Hubs = script.Parent.Parent.Parent.Hubs
+	local Credits = Hubs.Credits
+	local Menu = Hubs.Menu
+	local Reanim = Hubs.Reanim
+	local Hat = Hubs.Hat
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		menustick.Visible = false
+		reanimstick.Visible = false
+		hatstick.Visible = false
+		creditstick.Visible = true
+		Menu.Visible = false
+		Credits.Visible = true
+		Reanim.Visible = false
+		Hat.Visible = false
+	end)
+end
+coroutine.wrap(HWABXE_fake_script)()
+local function XQIM_fake_script() -- Rainbow.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(XQIM_fake_script)()
+local function CMIZ_fake_script() -- n5.Script 
+	local script = Instance.new('Script', n5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/ASDWdwdwefwfweffwe/main/daswasDXWas"))();
+	end)
+end
+coroutine.wrap(CMIZ_fake_script)()
+local function QVPKU_fake_script() -- NeptunianRBB.Script 
+	local script = Instance.new('Script', NeptunianRBB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/dasasdQE/main/EDAASD"))();
+	end)
+end
+coroutine.wrap(QVPKU_fake_script)()
+local function XSWC_fake_script() -- Shotgun.Script 
+	local script = Instance.new('Script', Shotgun)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/adsadasdasdasdas/main/asdadsasd"))();
+	end)
+end
+coroutine.wrap(XSWC_fake_script)()
+local function BZHANI_fake_script() -- HatOrbit.Script 
+	local script = Instance.new('Script', HatOrbit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/adw-wdfwaefqf/main/wdaawdaw"))();
+	end)
+end
+coroutine.wrap(BZHANI_fake_script)()
+local function HZRZI_fake_script() -- TrapRifle.Script 
+	local script = Instance.new('Script', TrapRifle)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/adsadsdasdas/main/advdsvdsvssdv****"))();
+	end)
+end
+coroutine.wrap(HZRZI_fake_script)()
+local function PSUWQ_fake_script() -- Naruto.Script 
+	local script = Instance.new('Script', Naruto)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/asdwedWEASDWEAFSDF.1/main/ADSDASDAS"))();
+	end)
+end
+coroutine.wrap(PSUWQ_fake_script)()
+local function UVYMIUN_fake_script() -- Sex.Script 
+	local script = Instance.new('Script', Sex)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/asdasdadsasdadsasdasfcasfe/main/asdasdadsadsdasddasads"))();
+	end)
+end
+coroutine.wrap(UVYMIUN_fake_script)()
+local function RNXQF_fake_script() -- BanH.Script 
+	local script = Instance.new('Script', BanH)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/ADdWWEWEAAWWAEGWEAEF/main/sadasdsadsad"))();
+	end)
+end
+coroutine.wrap(RNXQF_fake_script)()
+local function ATKF_fake_script() -- Cop.Script 
+	local script = Instance.new('Script', Cop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/eqweqwqewqwewqeqewqeqewq/main/qweqeACDCEFAEFQAGAERGVAED?token=AR3RKBEI5LCTL3JTKJR2XW272VIZ4"))();
+	end)
+end
+coroutine.wrap(ATKF_fake_script)()
+local function ZBIH_fake_script() -- Pillow.Script 
+	local script = Instance.new('Script', Pillow)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/asdwewqewewqeqweqe/main/dasadsadsasd"))();
+	end)
+end
+coroutine.wrap(ZBIH_fake_script)()
+local function SJYAOD_fake_script() -- pen.Script 
+	local script = Instance.new('Script', pen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/saddasadsads/main/asddasdas"))();
+	end)
+end
+coroutine.wrap(SJYAOD_fake_script)()
+local function LNCX_fake_script() -- car.Script 
+	local script = Instance.new('Script', car)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	end)
+end
+coroutine.wrap(LNCX_fake_script)()
+local function BIDTRW_fake_script() -- Gun.Script 
+	local script = Instance.new('Script', Gun)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/EWQWEAFAWERGWRE/main/GASDFEWFADSFAEW"))();
+	end)
+end
+coroutine.wrap(BIDTRW_fake_script)()
+local function ZMECS_fake_script() -- Reanim_3.Script 
+	local script = Instance.new('Script', Reanim_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/asdadsadsdasrealawfewfeawfeawfefw/main/asdadsadsadss"))();
+	end)
+end
+coroutine.wrap(ZMECS_fake_script)()
+local function ZXOG_fake_script() -- Noclip.Script 
+	local script = Instance.new('Script', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--script
+	end)
+end
+coroutine.wrap(ZXOG_fake_script)()
+local function SJRJP_fake_script() -- Respawn.Script 
+	local script = Instance.new('Script', Respawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--script
+	end)
+end
+coroutine.wrap(SJRJP_fake_script)()
+local function TCMYJHQ_fake_script() -- Ragdoll.Script 
+	local script = Instance.new('Script', Ragdoll)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HANDSOME81/rqewrqewwerwqerwqrewqr/main/asddasdasads"))();
+	end)
+end
+coroutine.wrap(TCMYJHQ_fake_script)()
+local function NWMQYVH_fake_script() -- Drag.Toggle 
+	local script = Instance.new('LocalScript', Drag)
+
+	function PopupGui()
+	if script.Parent.Visible==true then script.Parent.Visible=false
+	else script.Parent.Visible=true
+	end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+	if key.KeyCode==Enum.KeyCode.RightControl then
+	PopupGui()
+	end
+	end)
+end
+coroutine.wrap(NWMQYVH_fake_script)()
+local function BCCHG_fake_script() -- Drag.Dragify 
+	local script = Instance.new('LocalScript', Drag)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(BCCHG_fake_script)()
